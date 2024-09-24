@@ -1,7 +1,7 @@
 controller:
   kind: Deployment
   replicaCount: 1
-  service:
+  service: # this is for local testing purposes, will create a service like this: ingress-nginx-test ingress-nginx-test-controller NodePort <IP> http:80►30080 https:443►30697
     type: NodePort
     nodePorts:
       http: 30080

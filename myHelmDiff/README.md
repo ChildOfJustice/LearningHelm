@@ -1,8 +1,7 @@
 # Helm diff with local repo
 
 ## Install the chart:
-1. helm package ./kube/my-app
-2. helm upgrade --install my-app ./my-app-0.1.0.tgz
+1. helm upgrade --install my-app ./kube/my-app -f ./kube/my-app/values.yaml -f ./kube/my-app/values.dev.yaml
 
 ## Use custom helm diff:
 `./myHelmDiff.sh my-app ./kube/my-app "-f ./kube/my-app/values.yaml -f ./kube/my-app/values.dev.yaml"`
