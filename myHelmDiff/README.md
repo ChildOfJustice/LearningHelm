@@ -10,8 +10,8 @@
 # Helm diff with remote repo
 
 ## Install remote repo:
-1. helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
-2. helm repo update
+1. `helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx`
+2. `helm repo update`
 3. install nginx:
 ```
 helm upgrade --install ingress-nginx-test ingress-nginx \
